@@ -1,0 +1,45 @@
+16→X
+10→Y
+0→B
+0→A
+0→θ
+
+
+
+StorePic 8
+ZoomRcl
+AxesOff
+
+{X,2X}→L₁
+{0,0}→L₂
+
+Radian
+Full
+
+Input "A1 SPEED: ",I
+Input "A2 SPEED: ",J
+
+Lbl R
+A+I→A
+B+J→B
+(360-A)3(π/180)→C
+(360-B)3(π/180)→D
+
+L₁(2)→G
+L₂(2)→H
+
+{Xcos(C)-Ysin(C)}→L₁
+augment(L₁,{Xcos(D)-Ysin(D)+L₁(1)})→L₁
+{Xsin(C)+Ycos(C)}→L₂
+augment(L₂,{Xsin(D)+Ycos(D)+L₂(1)})→L₂
+
+
+L₁(2)→R
+L₂(2)→W
+
+RecallPic 8
+Line(int(G),int(H),int(R),int(W)
+StorePic 8
+
+Goto R
+End
