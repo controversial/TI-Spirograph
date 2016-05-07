@@ -1,6 +1,7 @@
 # TI-Spirograph
 A spirograph program painstakingly typed out on a TI-84 calculator and written in TI-BASIC. I get bored in math a lot 😂
 
+![](http://luke.deentaylor.com/siteassets/thumbs/ti-spiro.gif)
 ## How to copy
 The program is typed out in a `.txt` file for readability, but copying the `.8xp` file to your calculator will put it on your calculator.
 
